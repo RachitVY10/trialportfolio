@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 40px 0;
+            transition: all 0.3s ease;
+        }
+
+        .styled-name {
+            font-size: 36px;
+            font-weight: bold;
+            cursor: pointer;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .styled-name:hover {
+            color: #ffd700;
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+            padding-top: 20px;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #ffd700;
+        }
+
+        section {
+            padding: 60px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        #about {
+            background-color: #fff;
+        }
+
+        #about img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+
+        #skills {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .skill {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .skill:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+        }
+
+        .skill img {
+            width: 60px;
+            height: 60px;
+            margin-bottom: 15px;
+        }
+
+        #projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .project {
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .project:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+        }
+
+        #recommendations {
+            margin-top: 20px;
+        }
+
+        #recommendations ul {
+            list-style-type: none;
+            padding: 0;
+            margin-bottom: 20px;
+        }
+
+        #recommendations ul li {
+            margin: 10px 0;
+            font-size: 1.1rem;
+            color: #333;
+        }
+
+        #new-recommendation {
+            padding: 10px;
+            width: 70%;
+            font-size: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+
+        footer {
+            padding: 20px;
+            text-align: center;
+            background-color: #333;
+        }
+
+        footer a {
+            font-size: 30px;
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        footer a:hover {
+            color: #ffd700;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="styled-name" onclick="window.location.href='#home'">Rachit Vyas</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Project Details</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#recommendations">Recommendations</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Welcome to My Portfolio</h2>
+        <p>Click on the navigation links above to explore more about me, my projects, skills, and recommendations!</p>
+    </section>
+
+    <section id="about">
+        <img src="profile.png" alt="Profile Image">
+        <h2>About Me</h2>
+        <p>Passionate software developer with a strong foundation in web technologies, problem-solving, and innovative thinking. Always eager to learn and build impactful solutions.</p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skill">
+            <img src="html.png" alt="HTML">
+            <span>HTML</span>
+        </div>
+        <div class="skill">
+            <img src="css-3.png" alt="CSS">
+            <span>CSS</span>
+        </div>
+        <div class="skill">
+            <img src="java-script.png" alt="JavaScript">
+            <span>JavaScript</span>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">Project 1</div>
+        <div class="project">Project 2</div>
+        <div class="project">Project 3</div>
+    </section>
+
+    <section id="recommendations">
+        <h2>Recommendations</h2>
+        <ul id="recommendation-list">
+            <li>Recommendation 1</li>
+            <li>Recommendation 2</li>
+            <li>Recommendation 3</li>
+        </ul>
+        <input type="text" id="new-recommendation" placeholder="Add a recommendation">
+        <button onclick="addRecommendation()">Submit</button>
+    </section>
+
+    <footer>
+        <a href="#home" class="home-icon">🏠</a>
+    </footer>
+
+    <script>
+        function addRecommendation() {
+            let input = document.getElementById("new-recommendation").value;
+            if (input.trim() !== "") {
+                let list = document.getElementById("recommendation-list");
+                let li = document.createElement("li");
+                li.textContent = input;
+                list.appendChild(li);
+                alert("Recommendation added successfully!");
+                document.getElementById("new-recommendation").value = "";
+            }
+        }
+    </script>
+</body>
+</html>
